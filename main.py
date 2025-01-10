@@ -42,7 +42,7 @@ def main():
             for obj2 in shots:
                 collided = obj2.check_collisions(obj)
                 if collided == True:
-                    obj.kill()
+                    obj.split()
                     obj2.kill()
         for obj in drawable:
             obj.draw(screen)
